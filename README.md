@@ -100,7 +100,7 @@ sudo flashrom -p ch341a_spi -c <detected flash chip> -r original-fullflashchip-b
 
 
 
-1.- First, we need to create a blank canvas (named 'padded.bin') of 16MB for the new flash chip.
+1.- First, we need to create a blank canvas (named '16MBpadded.bin') of 16MB for the new flash chip.
 running the following command:
 
  dd if=/dev/zero bs=1M count=16 of=16MBpadded.bin
