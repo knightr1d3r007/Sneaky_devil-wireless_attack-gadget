@@ -109,10 +109,10 @@ https://disk.yandex.com/d/ubSsjNZU34Xk2L
 Choose the file/image called 'Uboot_usb_256_03.img'
 
 
-3.- Flash it into the new 16MB SPI. 
+3.- Flash Uboot image to the new 16MB SPI. 
 
 So, grab the "W25Q128" chip you bought. 
-Connect it to the Programmer Clip and flash the file 'Uboot_usb_256_03.img' with the following command:  
+Connect it to the Programmer's Clip and flash the file 'Uboot_usb_256_03.img' with the following command:  
 
 dd if=Uboot_usb_256_03.img conv=notrunc of=16MBpadded.bin
 
