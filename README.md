@@ -5,7 +5,9 @@
 This is a custom OpenWRT image for the A5-V11 mini 3G router.
 This little projects allows the A5-V11 3G mini router to create an Access Point (SigDigA5V11) at boot, out of the box.
 
+
 Connect this access point with the password "Rockaway007$" (this is also the root password)
+
 SSH to this Wireless attack gadget with command:
 
 ssh root@192.168.0.1
