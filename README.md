@@ -8,9 +8,12 @@ REQUIREMENTS:
 
 1.-We'll upgrade the mini router to 16MB with the chip "W25Q128". It can be found for a couple of bucks on aliexpress
 https://www.aliexpress.us/item/3256804269088009.html
+
 2.- The programer flasher ch341a with an clip adapter, which is very inexpensive and its supported for the awesome tool flashroom.
 https://www.ebay.com/itm/285027193020
+
 3.-An iron and solder
+
 4.-A PC running linux
 
 BEFORE ANYTHING (just in case):
