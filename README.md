@@ -103,6 +103,27 @@ sudo flashrom -p ch341a_spi
 sudo flashrom -p ch341a_spi -c <detected flash chip> -r original-fullflashchip-backup.bin 
 
 
+# Building the firmware
+
+
+1.- Download the Image builder from OpenWRT (ramips 19.07.7)
+
+wget https://downloads.openwrt.org/releases/19.07.7/targets/ramips/rt305x/openwrt-imagebuilder-19.07.7-ramips-rt305x.Linux-x86_64.tar.xz
+
+unpack it and cd to openwrt
+
+Once there, this is your chance to custom your root password, create a boot-access point, change access point name, change network configuration, add more or  less tools, or whatever else at your will (optional). For anything custom, you need mod and in some cases to create and the requiered files (for instance, network, wireless, shadow, etc) and place them inside a folder called 'files' (that also needs to be created)
+
+Then, run the command:
+
+
+make image -j2 V=s PROFILE="wt1520-8M" PACKAGES="-luci aircrack-ng airmon-ng ath9k-htc-firmware base-files block-mount busybox dnsmasq dropbear e2fsprogs ethtool fdisk firewall fstools fwtool getrandom hcxdumptool horst hostapd-common iodine ip6tables iptables iw-full jshn jsonfilter kernel kmod-ath kmod-ath9k-common kmod-ath9k-htc kmod-cfg80211 kmod-crypto-crc32c kmod-crypto-hash kmod-fs-ext4 kmod-gpio-button-hotplug kmod-ip6tables kmod-ipt-conntrack kmod-ipt-core kmod-ipt-nat kmod-ipt-offload kmod-leds-gpio kmod-lib-crc-ccitt kmod-lib-crc-itu-t kmod-lib-crc16 kmod-lib-crc7 kmod-mac80211 kmod-mii kmod-mmc kmod-mmc-spi kmod-nf-conntrack kmod-nf-conntrack6 kmod-nf-flow kmod-nf-ipt kmod-nf-ipt6 kmod-nf-nat kmod-nf-reject kmod-nf-reject6 kmod-nls-base kmod-ppp kmod-pppoe kmod-pppox kmod-rt2800-lib kmod-rt2800-mmio kmod-rt2800-soc kmod-rt2800-usb kmod-rt2x00-lib kmod-rt2x00-mmio kmod-rt2x00-usb kmod-slhc kmod-tun kmod-usb-core kmod-usb-ehci kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb2 libblkid1 libblobmsg-json libc libcomerr0 libevent2-7 libext2fs2 libfdisk1 libgcc1 libip4tc2 libip6tc2 libjson-c2 libjson-script libncurses6 libnl-core200 libnl-genl200 libnl-tiny libopenssl1.1 libpcap1 libpcre libpthread librt librtlsdr libsmartcols1 libss2 libtool-bin libubox20191228 libubus20210603 libuci20130104 libuclient20160123 libusb-1.0-0 libuuid1 libxtables12 logd macchanger mtd nano netcat netifd odhcp6c odhcpd-ipv6only openwrt-keyring opkg pixiewps ppp ppp-mod-pppoe privoxy procd procps-ng reaver rt2800-usb-firmware rtl-ais rtl-sdr rtl_433 swconfig tcpdump terminfo tmux ubox ubus ubusd uci uclibcxx uclient-fetch urandom-seed urngd usbutils usign wireless-regdb wireless-tools wpad-mini zlib" FILES="files"
+
+If you need more details, refer to the Openwrt.org site and search info there.
+
+The other option is to install the 'pre-made custom image' for this Wireless attack gadget project, located in the release section of this page.
+
+
 
 # Firmware, Installation process:
 
@@ -133,7 +154,9 @@ dd if=Uboot_usb_256_03.img conv=notrunc of=16MBpadded.bin
 
 4.- Get a USB flash drive formated to FAT32.
 
-Get the Custom OpenWRT image you built or grab the pre-made image from the release, then place it on the root directory of the USB flash drive.
+Get the Custom OpenWRT image you built or grab the pre-made image from the release section of this page. 
+
+Then place it on the root directory of the USB flash drive.
 
 
 5.- Connect the USB to your device.
