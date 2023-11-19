@@ -7,6 +7,8 @@
 This is a custom OpenWRT image for the A5-V11 mini 3G router.
 
 
+![Wirelless attack gadget](A5-V11_3G_mini_router.PNG)
+
 
 This little project allows the A5-V11 3G mini router to create an Access Point (SigDigA5V11) at boot, out of the box, becoming a Wireless swiss army tool that can be controlled from your phone running any SSH application.
 
