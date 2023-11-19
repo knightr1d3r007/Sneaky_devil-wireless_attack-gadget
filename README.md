@@ -78,10 +78,11 @@ https://www.ebay.com/itm/285027193020
 
 
 We need to grab a copy of your original flash chip. We will not needed it for this project, but better safe than sorry. 
-So, desolder/remove the flash chip from the mini router and connect it to the clip adapter from the ch341a programmer and run the command:
+So, desolder/remove the flash chip from the mini router and connect it to the clip adapter from the ch341a programmer and follow below:
 
 
 1.- This command will detect the flash chip (and its number) you removed from the A5-V11 mini router:
+
 
 sudo apt install flashrom
 
@@ -89,6 +90,7 @@ sudo flashrom -p ch341a_spi
 
 
 2.- This commnad will copy the original chip's content to a file
+
 
 sudo flashrom -p ch341a_spi -c <detected flash chip> -r original-fullflashchip-backup.bin 
 
