@@ -2,18 +2,25 @@
 
 
 
+
+
 This is a custom OpenWRT image for the A5-V11 mini 3G router.
-This little projects allows the A5-V11 3G mini router to create an Access Point (SigDigA5V11) at boot, out of the box.
+
+
+
+This little project allows the A5-V11 3G mini router to create an Access Point (SigDigA5V11) at boot, out of the box, becoming a Wireless swiss army tool that can be controlled from your phone running any SSH application.
 
 
 Connect this access point with the password "Rockaway007$" (this is also the root password)
 
-SSH to this Wireless attack gadget with command:
+SSH to this Wireless attack gadget with the command:
 
 ssh root@192.168.0.1
 
 Once inside the device, if desired change to change the wireless access point name and password. 
 Enter to etc/config/wireless do the changes and reboot, done.
+
+
 
 
 This image is loaded with the following features:
@@ -41,6 +48,9 @@ In order to bring life to this little project, a bit a basic soldering skills ar
 
 
 
+
+
+
 # Installation requirements:
 
 
@@ -55,6 +65,9 @@ https://www.ebay.com/itm/285027193020
 3.-An iron and solder
 
 4.-A PC running linux
+
+
+
 
 
 # Before anything (just in case):
@@ -77,7 +90,10 @@ sudo flashrom -p ch341a_spi
 sudo flashrom -p ch341a_spi -c <detected flash chip> -r original-fullflashchip-backup.bin 
 
 
+
 # Firmware, Installation process:
+
+
 
 1.- First, we need to create a blank canvas (named 'padded.bin') of 16MB for the new flash chip.
 running the following command:
