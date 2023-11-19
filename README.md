@@ -4,7 +4,7 @@
 
 
 
-This is a custom OpenWRT image for the A5-V11 mini 3G router.
+This is a custom OpenWRT image - CLI only - for the A5-V11 mini 3G router.
 
 In order to bring life to this little project, basic soldering skills are required to upgrade the current eeprom SPI (flash chip) on the "A5-v11_3G_mini_router". Currently in 2023, this device can be obtained from ebay or aliexpress for around $8.
 
