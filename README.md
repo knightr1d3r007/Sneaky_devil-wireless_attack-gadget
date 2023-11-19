@@ -4,7 +4,13 @@
 In order to bring life to this little project, a bit a basic soldering skills are required to upgrade the current eeprom SPI (flash chip) on the "A5-v11_3G_mini_router". Currently in 2023, this device can be obtained from ebay or aliexpress for around $8.
 
 
+
+
+
+
 # REQUIREMENTS:
+
+
 
 1.-We'll upgrade the mini router to 16MB with the chip "W25Q128". It can be found for a couple of bucks on aliexpress
 https://www.aliexpress.us/item/3256804269088009.html
@@ -16,7 +22,10 @@ https://www.ebay.com/itm/285027193020
 
 4.-A PC running linux
 
+
 # BEFORE ANYTHING (just in case):
+
+
 
 We need to grab a copy of your original flash chip. We will not needed it for this project, but better safe than sorry. So, desolder/remove the flash chip from the mini router and connect it to the clip adapter from the ch341a programmer and run the command:
 
