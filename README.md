@@ -128,11 +128,16 @@ Connect it to the Programmer's Clip and flash the file 'Uboot_usb_256_03.img' wi
 dd if=Uboot_usb_256_03.img conv=notrunc of=16MBpadded.bin
 
 
-4.- 
+4.- Get a USB flash drive formated to FAT32.
+Get the Custom OpenWRT image you built or grab the pre-made image from the release, then place it on the root directory of the USB flash drive.
 
 
-## to be continued
+5.- Connect the USB to your device.
+While holding the reset button, power the A5-V11 device. (keep holding the reset button for 10 seconds, the release the button).
+Your USB flash drive will light up and the OpenWRT custom image will be installed/flashed to your now ready Wireless attack gadget.
 
+
+6.- Go to an Ecorp building (wink- wink)
 
 
 
