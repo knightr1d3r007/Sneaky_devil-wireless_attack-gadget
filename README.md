@@ -18,20 +18,35 @@ This image is loaded with the following features:
 
 -Several wireless assesment tools.
 
-aircrack-ng 
+aircrack-ng
+
 airmon-ng
+
 reaver
+
 pixiewps
+
 tcpdump
+
 tmux
+
 rtl-sdr
+
 rtl_433
+
 rtl_ais
+
 iodine
+
 privoxy
-hcxdumptool 
+
+hcxdumptool
+
 horst
-Additional tools: netcat, fdisk, macchanger, nano
+
+Additional tools: 
+netcat, fdisk, macchanger, nano
+
 
 -Support for extension of the storage capacity with extroot (adding a USB flashdrive).
 
@@ -92,7 +107,7 @@ running the following command:
  dd if=/dev/zero bs=1M count=16 of=16MBpadded.bin
 
 
-2.- We will need a new Uboot for our OpenWRT-dropbox-mini-router. (Thanks to Wert-Wert)
+2.- We will need a new Uboot for our Wireless attack gadget. (Thanks to Wert-Wert)
 
 Get it from this site 
 https://disk.yandex.com/d/ubSsjNZU34Xk2L 
@@ -100,7 +115,9 @@ https://disk.yandex.com/d/ubSsjNZU34Xk2L
 Choose the file/image called 'Uboot_usb_256_03.img'
 
 
-3.- Flash it into the new 16MB SPI. So, grab the "W25Q128" chip you bought. 
+3.- Flash it into the new 16MB SPI. 
+
+So, grab the "W25Q128" chip you bought. 
 Connect it to the Programmer Clip and flash the file 'Uboot_usb_256_03.img' with the following command:  
 
 dd if=Uboot_usb_256_03.img conv=notrunc of=16MBpadded.bin
