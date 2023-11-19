@@ -29,23 +29,22 @@ Enter to etc/config/wireless do the changes and reboot, done.
 
 
 This image is loaded with the following features:
-
-Several wireless assesment tools.
 -
+1.- Several wireless assesment tools.
+
 aircrack-ng, airmon-ng, reaver, pixiewps, tcpdump, tmux, rtl-sdr, rtl_433, rtl_ais, iodine, privoxy, hcxdumptool, horst
 
 Additional tools: 
 netcat, fdisk, macchanger, nano
 
 
--Support for extension of the storage capacity with extroot (adding a USB flashdrive).
--
--Driver support for additional USB wireless cards adapters.
--
+2.- Support for extension of the storage capacity with extroot (adding a USB flashdrive).
+
+3.- Driver support for additional USB wireless cards adapters.
 Devices based on chipset ar9271 (for instance DWA-126, WNA1100, TL-WN721N, TL-WN722N V1.x, TL-WN322G v3, TL-WN422G v2, DNUA-93F and anything azurewave and atheros ar9271) and also the chipset rt2800, for example the Ralink and Mediatek USB devices RT2770, RT2870, RT3070 RT3071, RT3072, RT3572.
 
--Wireless access point waiting for you to connect, ready to rock your attack. (Connect to SigDigA5V11)
--
+4.- Wireless access point waiting for you to connect, ready to rock your attack. (Connect to SigDigA5V11)
+
 
 
 
