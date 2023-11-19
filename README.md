@@ -55,6 +55,7 @@ running the following command:
 
 Get it from this site 
 https://disk.yandex.com/d/ubSsjNZU34Xk2L 
+
 Choose the file/image called 'Uboot_usb_256_03.img'
 
 
