@@ -16,6 +16,7 @@ In order to bring life to this little project, a bit a basic soldering skills ar
 https://www.aliexpress.us/item/3256804269088009.html
 
 2.- The programer flasher ch341a with an clip adapter, which is very inexpensive and its supported for the awesome tool flashroom.
+
 https://www.ebay.com/itm/285027193020
 
 3.-An iron and solder
