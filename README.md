@@ -6,6 +6,8 @@
 
 This is a custom OpenWRT image for the A5-V11 mini 3G router.
 
+In order to bring life to this little project, a bit a basic soldering skills are required to upgrade the current eeprom SPI (flash chip) on the "A5-v11_3G_mini_router". Currently in 2023, this device can be obtained from ebay or aliexpress for around $8.
+
 
 ![Wirelless attack gadget](A5-V11_3G_mini_router.PNG)
 
@@ -48,7 +50,7 @@ Devices based on chipset ar9271 (for instance DWA-126, WNA1100, TL-WN721N, TL-WN
 
 
 
-In order to bring life to this little project, a bit a basic soldering skills are required to upgrade the current eeprom SPI (flash chip) on the "A5-v11_3G_mini_router". Currently in 2023, this device can be obtained from ebay or aliexpress for around $8.
+
 
 
 
