@@ -52,7 +52,7 @@ running the following command:
  dd if=/dev/zero bs=1M count=16 of=16MBpadded.bin
 
 
-2.- We will need a new Uboot for our OpenWRT-dropbox-mini-router. 
+2.- We will need a new Uboot for our OpenWRT-dropbox-mini-router. (Thanks to Wert-Wert)
 
 Get it from this site 
 https://disk.yandex.com/d/ubSsjNZU34Xk2L 
