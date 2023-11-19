@@ -42,6 +42,7 @@ running the following command:
 
 
 2.- We will need a new Uboot for our OpenWRT-dropbox-mini-router. 
+
 Get it from this site https://disk.yandex.com/d/ubSsjNZU34Xk2L and choose the file/image called 'Uboot_usb_256_03.img'
 
 
