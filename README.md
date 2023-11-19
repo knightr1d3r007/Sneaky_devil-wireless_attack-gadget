@@ -1,4 +1,44 @@
-# OpenWRT-dropbox-mini-router
+# OpenWRT Wireless attack mini-router
+
+
+
+This is a custom OpenWRT image for the A5-V11 mini 3G router.
+This little projects allows the A5-V11 3G mini router to create an Access Point (SigDigA5V11) at boot, out of the box.
+
+Connect this access point with the password "Rockaway007$" (this is also the root password)
+SSH to this Wireless attack gadget with command:
+
+ssh root@192.168.0.1
+
+Once inside the device, if desired change to change the wireless access point name and password. 
+Enter to etc/config/wireless do the changes and reboot, done.
+
+
+This image is loaded with the following features:
+
+-Several wireless assesment tools.
+
+aircrack-ng 
+airmon-ng
+reaver
+pixiewps
+tcpdump
+tmux
+rtl-sdr
+rtl_433
+rtl_ais
+iodine
+privoxy
+hcxdumptool 
+horst
+Additional tools: netcat, fdisk, macchanger, nano
+
+-Support for extension of the storage capacity with extroot (adding a USB flashdrive).
+
+-Driver support for additional USB wireless cards adapters (based on chipset ar9271
+
+
+y
 
 
 In order to bring life to this little project, a bit a basic soldering skills are required to upgrade the current eeprom SPI (flash chip) on the "A5-v11_3G_mini_router". Currently in 2023, this device can be obtained from ebay or aliexpress for around $8.
