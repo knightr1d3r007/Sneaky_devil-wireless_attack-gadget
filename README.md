@@ -23,6 +23,9 @@ Enter to etc/config/wireless do the changes and reboot, done.
 
 
 
+
+
+
 This image is loaded with the following features:
 
 -Several wireless assesment tools.
