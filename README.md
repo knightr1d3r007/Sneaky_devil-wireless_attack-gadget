@@ -19,7 +19,7 @@ SSH to this Wireless attack gadget with the command:
 
 ssh root@192.168.0.1
 
-Once inside the device, if desired change to change the wireless access point name and password. 
+Once inside the device, if desired, change the wireless access point name and password. 
 Enter to etc/config/wireless do the changes and reboot, done.
 
 
