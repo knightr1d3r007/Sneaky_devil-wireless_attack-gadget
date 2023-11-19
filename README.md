@@ -40,7 +40,7 @@ Additional tools:
 netcat, fdisk, macchanger, nano
 
 
-2.- Support for extension of the storage capacity with extroot (adding a USB flashdrive).
+2.- Support for extension of the storage capacity with extroot (adding a USB flashdrive formated to ext4).
 
 3.- Driver support for additional USB wireless cards adapters.
 Devices based on chipset ar9271 (for instance DWA-126, WNA1100, TL-WN721N, TL-WN722N V1.x, TL-WN322G v3, TL-WN422G v2, DNUA-93F and anything azurewave and atheros ar9271) and also the chipset rt2800, for example the Ralink and Mediatek USB devices RT2770, RT2870, RT3070 RT3071, RT3072, RT3572.
@@ -128,7 +128,7 @@ Connect it to the Programmer's Clip and flash the file 'Uboot_usb_256_03.img' wi
 dd if=Uboot_usb_256_03.img conv=notrunc of=16MBpadded.bin
 
 
-
+4.- 
 
 
 ## to be continued
