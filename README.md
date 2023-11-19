@@ -8,7 +8,7 @@ In order to bring life to this little project, a bit a basic soldering skills ar
 
 
 
-# REQUIREMENTS:
+# Installation requirements:
 
 
 
@@ -23,11 +23,12 @@ https://www.ebay.com/itm/285027193020
 4.-A PC running linux
 
 
-# BEFORE ANYTHING (just in case):
+# Before anything (just in case):
 
 
 
-We need to grab a copy of your original flash chip. We will not needed it for this project, but better safe than sorry. So, desolder/remove the flash chip from the mini router and connect it to the clip adapter from the ch341a programmer and run the command:
+We need to grab a copy of your original flash chip. We will not needed it for this project, but better safe than sorry. 
+So, desolder/remove the flash chip from the mini router and connect it to the clip adapter from the ch341a programmer and run the command:
 
 
 1.- This command will detect the flash chip (and its number) you removed from the A5-V11 mini router:
@@ -37,12 +38,12 @@ sudo apt install flashrom
 sudo flashrom -p ch341a_spi 
 
 
-2.- This commnad copy the chip's content to a file
+2.- This commnad will copy the original chip's content to a file
 
 sudo flashrom -p ch341a_spi -c <detected flash chip> -r original-fullflashchip-backup.bin 
 
 
-# NEXT STEPS:
+# Firmware, Installation process:
 
 1.- First, we need to create a blank canvas (named 'padded.bin') of 16MB for the new flash chip.
 running the following command:
@@ -52,7 +53,9 @@ running the following command:
 
 2.- We will need a new Uboot for our OpenWRT-dropbox-mini-router. 
 
-Get it from this site https://disk.yandex.com/d/ubSsjNZU34Xk2L and choose the file/image called 'Uboot_usb_256_03.img'
+Get it from this site 
+https://disk.yandex.com/d/ubSsjNZU34Xk2L 
+Choose the file/image called 'Uboot_usb_256_03.img'
 
 
 3.- Flash it into the new 16MB SPI. So, grab the "W25Q128" chip you bought. 
