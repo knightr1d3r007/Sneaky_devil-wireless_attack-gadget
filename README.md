@@ -22,6 +22,7 @@ SSH to this Wireless attack gadget with the command:
 ssh root@192.168.0.1
 
 Once inside the device, if desired, change the wireless access point name and password. 
+
 Enter to etc/config/wireless do the changes and reboot, done.
 
 
@@ -37,6 +38,7 @@ This image is loaded with the following features:
 aircrack-ng, airmon-ng, reaver, pixiewps, tcpdump, tmux, rtl-sdr, rtl_433, rtl_ais, iodine, privoxy, hcxdumptool, horst
 
 Additional tools: 
+
 netcat, fdisk, macchanger, nano
 
 
@@ -123,16 +125,19 @@ Choose the file/image called 'Uboot_usb_256_03.img'
 3.- Flash Uboot image to the new 16MB SPI. 
 
 So, grab the "W25Q128" chip you bought. 
+
 Connect it to the Programmer's Clip and flash the file 'Uboot_usb_256_03.img' with the following command:  
 
 dd if=Uboot_usb_256_03.img conv=notrunc of=16MBpadded.bin
 
 
 4.- Get a USB flash drive formated to FAT32.
+
 Get the Custom OpenWRT image you built or grab the pre-made image from the release, then place it on the root directory of the USB flash drive.
 
 
 5.- Connect the USB to your device.
+
 While holding the reset button, power the A5-V11 device. (keep holding the reset button for 10 seconds, the release the button).
 Your USB flash drive will light up and the OpenWRT custom image will be installed/flashed to your now ready Wireless attack gadget.
 
