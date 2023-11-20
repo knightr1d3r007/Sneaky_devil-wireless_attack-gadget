@@ -131,6 +131,9 @@ https://openwrt.org/docs/guide-user/additional-software/imagebuilder
 If compiling the image is too much of a process, the other option is to install the 'pre-made custom image' for this Wireless attack gadget project, located in the release section of this page.
 -
 
+![Banner](Banner-Wireless_Attack_Gadget.png)
+
+
 
 
 # Firmware, Installation process:
