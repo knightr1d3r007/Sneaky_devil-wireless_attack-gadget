@@ -35,14 +35,14 @@ This image is loaded with the following features:
 -
 1.- Several wireless assesment tools.
 
-aircrack-ng, airmon-ng, reaver, pixiewps, tcpdump, tmux, rtl-sdr, rtl_433, rtl_ais, iodine, privoxy, hcxdumptool, horst
+aircrack-ng, airmon-ng, reaver, pixiewps, horst, tcpdump, rtl-sdr, rtl_433, rtl_ais, iodine, privoxy, hcxdumptool
 
 Additional tools: 
 
-netcat, fdisk, macchanger, nano
+netcat, fdisk, macchanger, nano, tmux
 
 
-2.- Support for extension of the storage capacity with extroot (adding a USB flashdrive formated to ext4).
+2.- Support for extension of the root and storage capacity with extroot (adding a USB flashdrive formated to ext4). Or just add a USB for simply more storage. For example, room for packet capture, target details, saved configs, tools output, other info, etc.
 
 3.- Driver support for additional USB wireless cards adapters.
 Devices based on chipset ar9271 (for instance DWA-126, WNA1100, TL-WN721N, TL-WN722N V1.x, TL-WN322G v3, TL-WN422G v2, DNUA-93F and anything azurewave and atheros ar9271) and also the chipset rt2800, for example the Ralink and Mediatek USB devices RT2770, RT2870, RT3070 RT3071, RT3072, RT3572.
@@ -66,7 +66,7 @@ Devices based on chipset ar9271 (for instance DWA-126, WNA1100, TL-WN721N, TL-WN
 
 
 
-1.-We'll upgrade the mini router to 16MB with the chip "W25Q128". It can be found for a couple of bucks on aliexpress
+1.-We'll upgrade the mini router SPI eeprom capacity to 16MB with the chip "W25Q128". It can be found for a couple of bucks on aliexpress
 
 https://www.aliexpress.us/item/3256804269088009.html
 
@@ -90,7 +90,7 @@ We need to grab a copy of your original flash chip. We will not needed it for th
 So, desolder/remove the flash chip from the mini router and connect it to the clip adapter from the ch341a programmer and follow below:
 
 
-1.- This command will detect the flash chip (and its number) you removed from the A5-V11 mini router:
+1.- These commands will install flashrom and  detect the original flash chip (and its number) you removed from the A5-V11 mini router:
 
 
 sudo apt install flashrom
@@ -98,7 +98,7 @@ sudo apt install flashrom
 sudo flashrom -p ch341a_spi 
 
 
-2.- This commnad will copy the original chip's content to a file
+2.- This command will copy the original chip's content to a file
 
 
 sudo flashrom -p ch341a_spi -c <detected flash chip> -r original-fullflashchip-backup.bin 
@@ -107,7 +107,7 @@ sudo flashrom -p ch341a_spi -c <detected flash chip> -r original-fullflashchip-b
 # Building the firmware
 
 
-1.- Download the Image builder from OpenWRT (ramips 19.07.7)
+1.- Download the Image builder from openwrt.org (ramips 19.07.7)
 
 wget https://downloads.openwrt.org/releases/19.07.7/targets/ramips/rt305x/openwrt-imagebuilder-19.07.7-ramips-rt305x.Linux-x86_64.tar.xz
 
