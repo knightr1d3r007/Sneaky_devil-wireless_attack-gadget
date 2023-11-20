@@ -174,10 +174,12 @@ Then place it on the root directory of the USB flash drive.
 
 While holding the reset button, power the A5-V11 device. (keep holding the reset button for 10 seconds, then release the button).
 Your USB flash drive will light up and the OpenWRT custom image will be installed/flashed. Leave your device alone for a minute or two. 
-Now, your Wireless attack gadget is ready. 
 
 
-6.- Connect to the access point. Go nearby an Ecorp building (wink- wink)
+
+6.- Now, your Wireless attack gadget is ready. Connect to the access point. 
+
+Go nearby an Ecorp building (wink- wink)
 
 
 
