@@ -67,9 +67,10 @@ Devices based on chipset ar9271 (for instance DWA-126, WNA1100, TL-WN721N, TL-WN
 
 
 1.-We'll upgrade the mini router to 16MB with the chip "W25Q128". It can be found for a couple of bucks on aliexpress
+
 https://www.aliexpress.us/item/3256804269088009.html
 
-2.- The programer flasher ch341a with an clip adapter, which is very inexpensive and its supported for the awesome tool flashroom.
+2.- The programer flasher ch341a with a clip adapter, which is very inexpensive and its supported for the awesome tool flashroom.
 
 https://www.ebay.com/itm/285027193020
 
@@ -127,7 +128,8 @@ If you need more details to build the image, refer to the Openwrt.org site and s
 https://openwrt.org/docs/guide-user/additional-software/imagebuilder
 
 
-The other option is to install the 'pre-made custom image' for this Wireless attack gadget project, located in the release section of this page.
+If compiling the image is too much of a process, the other option is to install the 'pre-made custom image' for this Wireless attack gadget project, located in the release section of this page.
+-
 
 
 
