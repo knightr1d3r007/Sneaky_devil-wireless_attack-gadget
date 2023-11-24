@@ -101,7 +101,7 @@ sudo flashrom -p ch341a_spi
 2.- This command will copy the original chip's content to a file
 
 
-sudo flashrom -p ch341a_spi -c "<your-flash-chip-name-detected-by-flashrom>" -r original-fullflashchip-backup.bin 
+sudo flashrom -p ch341a_spi -c "your-flash-chip-name-detected-by-flashrom" -r original-fullflashchip-backup.bin 
 
 
 # Building the firmware
