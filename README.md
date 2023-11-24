@@ -107,6 +107,19 @@ sudo flashrom -p ch341a_spi -c "your-flash-chip-name-detected-by-flashrom" -r or
 # Building the firmware
 
 
+
+
+0.-We need to prepare the OpenWRT build system. For Debian's derivatives install the following packages:
+
+
+sudo apt update
+sudo apt install build-essential clang flex bison g++ gawk gcc-multilib g++-multilib gettext git libncurses-dev libssl-dev python3 python3-distutils rsync unzip zlib1g-dev file wget
+
+For other linux flavours follow this page for the setup:
+https://openwrt.org/docs/guide-developer/toolchain/install-buildsystem
+
+
+
 1.- Download the Image builder from openwrt.org (ramips 19.07.7)
 
 wget https://downloads.openwrt.org/releases/19.07.7/targets/ramips/rt305x/openwrt-imagebuilder-19.07.7-ramips-rt305x.Linux-x86_64.tar.xz
