@@ -130,7 +130,7 @@ wget https://downloads.openwrt.org/releases/19.07.7/targets/ramips/rt305x/openwr
 
 Once there, this is your chance to custom your root password, create a boot-access point, change access point name, change network configuration, add more or  less tools, or whatever else at your will (optional). 
 
-For anything custom, you need mod and in some cases create the requiered files (for instance: network, wireless, shadow, etc) and place them inside a folder called 'files' (that also needs to be created)
+For anything custom, you need mod and in some cases create the requiered files (for instance the files: network, wireless, shadow need to be modified) and place them inside a folder etc/config, which in turn need to be inside a folder called 'files' (that also needs to be created y placed inside the openwrt folder).
 
 Then, run the command:
 
