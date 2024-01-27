@@ -169,30 +169,42 @@ https://disk.yandex.com/d/ubSsjNZU34Xk2L
 Choose the file/image called 'Uboot_usb_256_03.img'
 
 
-3.- Flash Uboot image to the new 16MB SPI. 
+3.- Merge the new 'Uboot' image to the 16MB blank canvas you created in step 1.
 
-So, grab the "W25Q128" chip you bought. 
-
-Connect it to the Programmer's Clip and flash the file 'Uboot_usb_256_03.img' with the following command:  
+Run the following command:  
 
 dd if=Uboot_usb_256_03.img conv=notrunc of=16MBpadded.bin
 
+After this, the file '16MBpadded.bin' will be ready and will include the 'new uboot' at the beginning of the 16MB.
 
-4.- Get a USB flash drive formated to FAT32.
+
+ 
+4. Flash the now ready canvas (16MBpadded.bin) to the chip W25Q128
+
+Grab the chip W25Q128, connect it to the flash programmer ch341a and run the command:
+
+sudo flashrom -p ch341a_spi -c "your-flash-chip-name/number-detected-by-flashrom" -w 16MBpadded.bin
+
+
+
+5. Solder the chip W25Q128 to the mini router.
+   
+
+6.- Get a USB flash drive formated to FAT32.
 
 Get the Custom OpenWRT image you built or grab the pre-made image from the release section of this page. 
 
 Then place it on the root directory of the USB flash drive.
 
 
-5.- Connect the USB to your device.
+7.- Connect the USB to your device.
 
 While holding the reset button, power the A5-V11 device. (keep holding the reset button for 10 seconds, then release the button).
 Your USB flash drive will light up and the OpenWRT custom image will be installed/flashed. Leave your device alone for a minute or two. 
 
 
 
-6.- Now, your Wireless attack gadget is ready. Connect to the access point. 
+8.- Now, your Wireless attack gadget is ready. Connect to the access point. 
 
 Go nearby an Ecorp building (wink- wink)
 
