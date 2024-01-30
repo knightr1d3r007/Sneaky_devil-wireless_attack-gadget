@@ -1,4 +1,4 @@
-# OpenWRT Wireless attack mini-router
+# "Sneaky_devil" is an OpenWRT Wireless attack mini-router for wireless assessments.
 
 
 
@@ -31,7 +31,7 @@ Enter to etc/config/wireless do the changes and reboot, done.
 
 
 
-This image is loaded with the following features:
+The Sneaky_devil image is loaded with the following features:
 -
 1.- Several wireless assesment tools.
 
@@ -104,7 +104,7 @@ sudo flashrom -p ch341a_spi
 sudo flashrom -p ch341a_spi -c "your-flash-chip-name-detected-by-flashrom" -r original-fullflashchip-backup.bin 
 
 
-# Building the firmware
+# Building the firmware for the Sneaky_devil
 
 
 
@@ -151,7 +151,7 @@ If compiling the image is too much of a process, the other option is to install 
 
 
 
-# Firmware, Installation process:
+# Sneaky_devil Firmware, Installation process:
 
 
 
@@ -208,7 +208,7 @@ Your USB flash drive will light up and the OpenWRT custom image will be installe
 
 
 
-8.- Now, your Wireless attack gadget is ready. Connect to the access point. 
+8.- Now, your "Sneaky_devil" is ready. Connect to the access point and go out to play. 
 
 Go nearby an Ecorp building (wink- wink)
 
